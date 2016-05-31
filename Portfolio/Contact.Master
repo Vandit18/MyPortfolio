@@ -17,7 +17,7 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" name="sentMessage" novalidate="novalidate">
 
         <bs4:Navbar runat="server"></bs4:Navbar>
     <div>
