@@ -11,7 +11,17 @@ namespace Portfolio
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
+        /**
+         This method will send page back to main page
 
+            @mehod : submitButton_Click
+            @return {void}
+         **/
+        protected void SubmitButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("HomePage.aspx");
         }
     }
 }

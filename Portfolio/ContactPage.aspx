@@ -12,8 +12,7 @@
                 <form name="sentMessage" runat="server" novalidate="novalidate">
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <asp:Label ID="LabelName" runat="server" Text=""></asp:Label>
-                            <asp:TextBox runat="server" CssClass="form-control" ID="FirstNameTextBox" placeholder="FirstName" required="true"></asp:TextBox>
+                     <asp:TextBox runat="server" CssClass="form-control" ID="FirstNameTextBox" placeholder="FirstName" required="true"></asp:TextBox>
                     <asp:RequiredFieldValidator runat="server" ID="fnRequired" CssClass="alert-danger" ControlToValidate="FirstNameTextBox" Display="Dynamic" SetFocusOnError="true" ErrorMessage="First Name Required"></asp:RequiredFieldValidator>
                             <p class="help-block text-danger"></p>
                         </div>
@@ -45,7 +44,7 @@
                     <div id="success"></div>
                     <div class="row">
                         <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-default">Send</button>
+                            <asp:Button runat="server" Text="Submit" cssclass="btn btn-default" OnClick="SubmitButton_Click"></asp:Button>
                         </div>
                     </div>
                 </form>
