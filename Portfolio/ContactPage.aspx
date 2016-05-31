@@ -3,52 +3,41 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/contact-bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="page-heading">
-                        <h1>Contact Me</h1>
-                        <hr class="small"/>
-                        <span class="subheading">Have questions? I have answers (maybe).</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Content -->
+      <!-- Main Content -->
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <p>Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!</p>
                
-                
+                <form name="sentMessage" runat="server" novalidate="novalidate">
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Name</label>
-                            <input runat="server" type="text" class="form-control" ID="name" required="true" data-validation-required-message="Please enter your name."/>
+                            <asp:Label ID="LabelName" runat="server" Text=""></asp:Label>
+                            <asp:TextBox runat="server" CssClass="form-control" ID="FirstNameTextBox" placeholder="FirstName" required="true"></asp:TextBox>
+                    <asp:RequiredFieldValidator runat="server" ID="fnRequired" CssClass="alert-danger" ControlToValidate="FirstNameTextBox" Display="Dynamic" SetFocusOnError="true" ErrorMessage="First Name Required"></asp:RequiredFieldValidator>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Email Address</label>
-                            <asp:TextBox runat="server" type="email" cssclass="form-control" ID="email" required="ture" data-validation-required-message="Please enter your email address."/>
+                            <asp:Label ID="LabelEmail" runat="server" Text=""></asp:Label>
+                            <asp:TextBox runat="server" TextMode="Email" CssClass="form-control" ID="EmailTextBox" placeholder="Email" required="true"></asp:TextBox>
+                    <asp:RequiredFieldValidator runat="server" ID="EmailRequired" CssClass="alert-danger" ControlToValidate="EmailTextBox" Display="Dynamic" SetFocusOnError="true" ErrorMessage="Email Required"></asp:RequiredFieldValidator>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Phone Number</label>
-                            <asp:TextBox runat="server" type="tel" cssclass="form-control" ID="phone" required="true" data-validation-required-message="Please enter your phone number."/>
+                            
+                            <asp:TextBox runat="server" TextMode="Phone" CssClass="form-control" ID="ContactTextBox" placeholder="ContactNumber" required="true"></asp:TextBox>
+                    <asp:RequiredFieldValidator runat="server" ID="PhoneRequired" CssClass="alert-danger" ControlToValidate="ContactTextBox" Display="Dynamic" SetFocusOnError="true" ErrorMessage="Contact Number Required"></asp:RequiredFieldValidator>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Message</label>
-                            <asp:TextBox runat="server" TextMode="MultiLine" cssclass="form-control" ID="message" data-validation-required-message="Please enter a message."></asp:TextBox>
+                        <asp:TextBox runat="server" CssClass="form-control" ID="CommentTextBox" placeholder="Comment" TextMode="MultiLine"></asp:TextBox>
+                    <asp:RequiredFieldValidator runat="server" ID="cmtRequired" CssClass="alert-danger" ControlToValidate="CommentTextBox" Display="Dynamic" SetFocusOnError="true" ErrorMessage="Comment Required"></asp:RequiredFieldValidator>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -59,7 +48,7 @@
                             <button type="submit" class="btn btn-default">Send</button>
                         </div>
                     </div>
-               
+                </form>
             </div>
         </div>
     </div>
@@ -72,22 +61,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
+                       
                         <li>
                             <a href="#">
                                 <span class="fa-stack fa-lg">
@@ -97,8 +71,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
-                </div>
+                  </div>
             </div>
         </div>
     </footer>
