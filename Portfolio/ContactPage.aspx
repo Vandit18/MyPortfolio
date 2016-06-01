@@ -9,7 +9,7 @@
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <p>Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!</p>
                
-                <form name="sentMessage" runat="server" novalidate="novalidate">
+                <form name="sentMessage" runat="server">
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                      <asp:TextBox runat="server" CssClass="form-control" ID="FirstNameTextBox" placeholder="FirstName" required="true"></asp:TextBox>
@@ -28,7 +28,7 @@
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             
-                            <asp:TextBox runat="server" TextMode="Phone" CssClass="form-control" ID="ContactTextBox" placeholder="ContactNumber" required="true"></asp:TextBox>
+                            <asp:TextBox runat="server" TextMode="Phone" CssClass="form-control" ID="ContactTextBox" placeholder="ContactNumber" required="true" pattern="^([0|\+[0-9]{1,5})?([1-9][0-9]{9})$" title="Your Phone Number should start with + sign,country code and number"></asp:TextBox>
                     <asp:RequiredFieldValidator runat="server" ID="PhoneRequired" CssClass="alert-danger" ControlToValidate="ContactTextBox" Display="Dynamic" SetFocusOnError="true" ErrorMessage="Contact Number Required"></asp:RequiredFieldValidator>
                             <p class="help-block text-danger"></p>
                         </div>
