@@ -15,7 +15,7 @@
                         <br />
                         <br />
                         <br />
-                        This is what I do.</span>
+                        This is what I am.</span>
                     </div>
                 </div>
             </div>
