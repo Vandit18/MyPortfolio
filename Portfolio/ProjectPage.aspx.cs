@@ -12,7 +12,7 @@ namespace Portfolio
         protected void Page_Load(object sender, EventArgs e)
         {
             //This will take to site I am working on.
-            currentProject.Text = "This is link to it,<a href= 'http://georgianmallcellicon.azurewebsites.net/'> Click me!! </ a > ";
+            currentProject.Text = "This is link to it,<a href= 'http://georgianmallcellicon.azurewebsites.net/'> Click me!! Current Project For Cellicon Store </ a > ";
         }
     }
 }

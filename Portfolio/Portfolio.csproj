@@ -101,8 +101,11 @@
     <Content Include="img\computer.jpg" />
     <Content Include="img\contact-bg.jpg" />
     <Content Include="img\home-bg.jpg" />
+    <Content Include="img\it-net-overview.png" />
     <Content Include="img\post-bg.jpg" />
     <Content Include="img\post-sample-image.jpg" />
+    <Content Include="img\SQL.jpg" />
+    <Content Include="img\Web-designing1.jpg" />
     <Content Include="img\WhatsApp-Image-20160530.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
