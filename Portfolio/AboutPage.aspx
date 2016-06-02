@@ -26,9 +26,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p></p>
-                <p></p>
-                <p></p>
+                <p>I am an international student.</p>
+                <p>I have completed Computer Engineering and doing computer programming in Georgian College.</p>
+                <p>Invite me if you are playing badminton. My favourite Sport</p>
             </div>
         </div>
     </div>
