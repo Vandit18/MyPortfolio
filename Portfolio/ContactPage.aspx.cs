@@ -5,7 +5,12 @@ using System.Net.Mail;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-
+/**
+ @author: Vandit Kothari
+    @date: June 1,2016
+    @Website Name : vkothari@azurewebsites.net
+    @This is a contact page which will get information from user.
+*/
 namespace Portfolio
 {
     public partial class ContactPage : System.Web.UI.Page

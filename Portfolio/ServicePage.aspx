@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Service Page" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="ServicePage.aspx.cs" Inherits="Portfolio.ServicePage" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <!-- header content -->
     <header class="intro-header" style="background-image: url('img/Computer.jpg')">
         <div class="container">
             <div class="row">

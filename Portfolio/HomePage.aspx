@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="HomePage.aspx.cs" Inherits="Portfolio.HomePage" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <!-- header content -->
      <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
         <div class="container">
             <div class="row">

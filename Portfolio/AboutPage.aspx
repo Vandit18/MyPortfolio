@@ -1,7 +1,8 @@
 ﻿<%@ Page Title="About Page" Language="C#" MasterPageFile="~/Home.Master" AutoEventWireup="true" CodeBehind="AboutPage.aspx.cs" Inherits="Portfolio.AboutPage" %>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-     <header class="intro-header" style="background-image: url('img/WhatsApp-Image-20160530.jpg')">
+    <!-- header content --> 
+    <header class="intro-header" style="background-image: url('img/WhatsApp-Image-20160530.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">

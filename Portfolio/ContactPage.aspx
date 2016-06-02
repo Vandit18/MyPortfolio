@@ -2,7 +2,6 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
       <!-- Main Content -->
     <div class="container">
         <div class="row">
