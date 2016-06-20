@@ -20,14 +20,19 @@ namespace Portfolio
             try
             {
                 MailMessage mail = new MailMessage();
-                          mail.From = new MailAddress(EmailTextBox.Text);
-                          mail.To.Add("vanditkothari@gmail.com");
-                          mail.Subject = "Contact Us";
-                          mail.IsBodyHtml = true;
-                         SmtpClient smtp = new SmtpClient();
-                          smtp.Host = "smtp.gmail.com";
-                         smtp.Send(mail);
+                SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
+                mail.From = new MailAddress(EmailTextBox.Text);
+                mail.To.Add("onetwo12shah@gmail.com");
+                mail.Subject = "Test Mail";
+                mail.Body = "This is for testing SMTP mail from GMAIL";
+
+                SmtpServer.Port = 587;
+                SmtpServer.Credentials = new System.Net.NetworkCredential("onetwo12shah", "VANDIT189");
+                SmtpServer.EnableSsl = true;
+
+                SmtpServer.Send(mail);
+                //MessageBox.Show("mail Send");
             }
             catch (Exception ex)
             {
