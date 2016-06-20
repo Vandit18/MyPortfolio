@@ -7,7 +7,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 /**
  @author: Vandit Kothari
-    @date: June 1,2016
+    @date: June 20,2016
     @Website Name : vkothari@azurewebsites.net
     @This is a contact page which will get information from user.
 */
@@ -22,8 +22,8 @@ namespace Portfolio
                 MailMessage mail = new MailMessage();
                 SmtpClient SmtpServer = new SmtpClient("smtp.gmail.com");
 
-                mail.From = new MailAddress(EmailTextBox.Text);
-                mail.To.Add("onetwo12shah@gmail.com");
+                mail.From = new MailAddress("onetwo12shah@gmail.com");
+                mail.To.Add(EmailTextBox.Text);
                 mail.Subject = "Test Mail";
                 mail.Body = "This is for testing SMTP mail from GMAIL";
 
