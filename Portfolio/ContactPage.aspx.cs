@@ -24,8 +24,9 @@ namespace Portfolio
 
                 mail.From = new MailAddress("onetwo12shah@gmail.com");
                 mail.To.Add(EmailTextBox.Text);
-                mail.Subject = "Test Mail";
-                mail.Body = "This is for testing SMTP mail from GMAIL";
+                mail.CC.Add("kotharivandit18@gmail.com");
+                mail.Subject ="Thank you.";
+                mail.Body = "Thank you for contacting me.";
 
                 SmtpServer.Port = 587;
                 SmtpServer.Credentials = new System.Net.NetworkCredential("onetwo12shah", "VANDIT189");
