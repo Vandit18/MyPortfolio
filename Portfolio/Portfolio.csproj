@@ -70,6 +70,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Custome.css" />
     <Content Include="packages.config" />
     <Content Include="Home.Master" />
     <Content Include="Contact.Master" />
