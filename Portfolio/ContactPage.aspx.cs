@@ -26,7 +26,7 @@ namespace Portfolio
                 mail.To.Add(EmailTextBox.Text);
                 mail.CC.Add("kotharivandit18@gmail.com");
                 mail.Subject ="Thank you.";
-                mail.Body = "Thank you for contacting me.";
+                mail.Body = CommentTextBox.Text;
 
                 SmtpServer.Port = 587;
                 SmtpServer.Credentials = new System.Net.NetworkCredential("onetwo12shah", "VANDIT189");
