@@ -46,7 +46,7 @@ namespace Portfolio.User_Control
                 case "Contact Page":
                     Contact.Attributes.Add("class", "active");
                     break;
-                }
+            }
             }
         }
 }
