@@ -18,9 +18,10 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>I am an international student.</p>
-                <p>I have completed Computer Engineering and doing computer programming in Georgian College.</p>
-                <p>Invite me if you are playing badminton. My favourite Sport</p>
+                <p>I am all round package for you with very unique skills.
+                    <br /> Past 2 co-op experience will help me a lot in terms of understanding importance of task/project.
+                    <br /> I believe that my unique blend of experience, problem solving skills and people skills differentiates me from most other candidates. 
+                    <br />I am motivated, disciplined and focused and am willing to do whatever it takes to get the job done.</p>
             </div>
         </div>
     </div>
